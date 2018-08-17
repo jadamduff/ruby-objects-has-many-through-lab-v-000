@@ -7,7 +7,7 @@ class Genre
  end
 
  def artists
-   self.songs.map {|song| return song.artist if song.genre == self}
+   self.songs.map {|song| song.artist if song.genre == self}
  end
 
 end
