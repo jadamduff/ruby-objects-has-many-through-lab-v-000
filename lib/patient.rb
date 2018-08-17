@@ -1,7 +1,7 @@
 class Patient
   attr_accessor :name
   attr_reader :appointments, :doctors
-  
+
   def initialize(name)
     @name = name
     @appointments = []
@@ -16,5 +16,5 @@ class Patient
   def doctors
     self.appointments.map {|app| return app.doctor if app.patient == self}
   end
-  
+
 end
