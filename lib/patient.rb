@@ -11,6 +11,7 @@ class Patient
     appointment = Appointment.new(self, doctor, date)
     self.appointments << appointment
     doctor.appointments << appointment
+    appointment
   end
 
   def doctors
